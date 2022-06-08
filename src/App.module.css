@@ -1,0 +1,140 @@
+.wrapper {
+  max-width: 46.25rem;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.searchBox {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+
+.inputSearch {
+  flex: 1;
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  color: var(--gray-300);
+  padding: 1rem;
+}
+
+.inputSearch:focus,
+.inputSearch:not(.inputSearch[value='']) {
+  color: var(--gray-100);
+  outline: 2px solid var(--purple-600);
+}
+
+.btnSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  background-color: var(--blue-600);
+  border-radius: 8px;
+
+  color: var(--gray-100);
+
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.btnSearch:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.btnSearch:hover {
+  background-color: var(--blue-400);
+}
+
+.btnSearch span {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.btnSearch .svgSearch {
+  line-height: 0;
+  margin-left: 0.5rem;
+}
+
+.todoWrapper {
+  margin-top: 4rem;
+}
+
+.todoWrapper .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdItems,
+.doneItems {
+  display: flex;
+}
+
+.createdItems .counter,
+.doneItems .counter {
+  margin-left: 0.5rem;
+}
+
+.createdItems {
+  color: var(--blue-400);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.doneItems {
+  color: var(--purple-400);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.counter {
+  background: var(--gray-400);
+  border-radius: 999px;
+  padding: 0.125rem 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  width: fit-content;
+}
+
+.counter span {
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.content {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.contentEmpty {
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+  min-height: 16rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentEmpty img {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.contentEmpty p {
+  color: var(--gray-300);
+}
+.contentEmpty p strong {
+  font-weight: 700;
+}
